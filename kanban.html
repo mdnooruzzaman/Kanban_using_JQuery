@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css">
+  <link rel="stylesheet" href="style.css">
+
+  
+  <script src="script.js"></script> 
+
+</head>
+<body>
+
+<div>
+  <!-- Adding item in todo list-->
+<div class="container" style="background-color:rgb(238, 71, 20);">
+    <h2>TODO</h2>
+    <ul class="sortable connectedSortable">
+      <li class="card">Learn jquery</li>
+      <li class="card">Learn java</li>
+      <li class="card">Learn SQL</li>
+      <li class="card">learn NoSQL</li>
+      <li class="card">Learn Node.js</li>
+      <li class="card">Learn javaScript</li>
+    </ul>
+
+    <div class="link-div">
+        <input type="text" id="new_text" value=""/>
+        <input type="button" name="btnAddNew" value="Add" class="add-button"/>
+    </div>
+
+</div>
+
+<!-- Progress item -->
+<div class="container" style="background-color:rgb(61, 61, 60);">
+    <h2>In Progress</h2>
+    <ul class="sortable connectedSortable" >
+      <li class="card">Learning jquery</li>
+      <li class="card">Learning java</li>
+      <li class="card">Learning SQL</li>
+      
+    </ul>
+
+    <div class="link-div">
+      <input type="text" id="Progress_text" value=""/>
+      <input type="button" name="btnAddNew" value="Add" class="Progress-add-button"/>
+    </div>
+
+</div>
+
+<!--verified item-->
+<div class="container" style="background-color:rgb(41, 39, 202);">
+    <h2>Verification</h2>
+    <ul class="sortable connectedSortable" >
+      <li class="card">SQL</li>
+      <li class="card"> java</li>
+
+    </ul>
+
+    <div class="link-div">
+      <input type="text" id="verified_text" value=""/>
+      <input type="button" name="btnAddNew" value="Add" class="Verified-add-button"/>
+    </div>
+</div>
+
+<!--Done part-->
+<div class="container" style="background-color:green;">
+    <h2>Done</h2>
+    <ul class="sortable connectedSortable" >
+      <li class="card">java</li>
+    </ul>
+  <div class="link-div">
+    <input type="text" id="Done_text" value=""/>
+    <input type="button" name="btnAddNew" value="Add" class="Done-add-button"/>
+  </div>
+</div>
+</div>
+</body>
+</html>
